@@ -1,50 +1,150 @@
-# Welcome to your Expo app 👋
+🚗 ParkOn – Monitoramento Inteligente de Vagas
+<p align="center"> <img src="https://img.shields.io/badge/React%20Native-Expo-blue?style=for-the-badge&logo=react" /> <img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white" /> <img src="https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white" /> <img src="https://img.shields.io/badge/MySQL-005C84?style=for-the-badge&logo=mysql&logoColor=white" /> <img src="https://img.shields.io/badge/Arduino-00979D?style=for-the-badge&logo=arduino&logoColor=white" /> <img src="https://img.shields.io/badge/ESP32-000000?style=for-the-badge&logo=espressif&logoColor=white" /> <img src="https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white" /> </p> <p align="center"> <img src="https://img.shields.io/badge/Status-Em%20Desenvolvimento-yellow?style=for-the-badge" /> <img src="https://img.shields.io/badge/LICENSE-MIT-green?style=for-the-badge" /> <img src="https://img.shields.io/badge/Plataforma-Mobile-blueviolet?style=for-the-badge&logo=android" /> </p>
+📘 Sobre o Projeto
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+O ParkOn é um protótipo completo que integra hardware e software para monitorar, em tempo real, a disponibilidade de vagas em estacionamentos.
+O sistema combina:
 
-## Get started
+Maquete física com Arduino + ESP32
 
-1. Install dependencies
+Sensores inteligentes
 
-   ```bash
-   npm install
-   ```
+LEDs indicadores de ocupação
 
-2. Start the app
+Catraca automatizada
 
-   ```bash
-   npx expo start
-   ```
+Aplicativo mobile moderno
 
-In the output, you'll find options to open the app in a
+O objetivo é demonstrar como um estacionamento inteligente pode funcionar na prática, oferecendo eficiência e praticidade aos usuários.
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+🔧 Arquitetura do Sistema
+[Arduino/ESP32] → envia dados → [Backend PHP/MySQL] → sincroniza → [App React Native]
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+Hardware
 
-## Get a fresh project
+Arduino
 
-When you're ready, run:
+ESP32
 
-```bash
-npm run reset-project
-```
+Sensores digitais
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+LEDs (verde = livre, vermelho = ocupado)
 
-## Learn more
+Servo motor (catraca)
 
-To learn more about developing your project with Expo, look at the following resources:
+Código em C++
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+Software
 
-## Join the community
+TypeScript
 
-Join our community of developers creating universal apps.
+React Native (Expo)
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+PHP
+
+MySQL
+
+📱 Funcionalidades do App
+
+Visualização em tempo real das vagas
+
+Seleção de estacionamento
+
+Interface moderna e intuitiva
+
+Comunicação instantânea com o backend
+
+Atualização automática dos dados enviados pelo ESP32
+
+🛠️ Instalação e Execução
+📌 Frontend (React Native / Expo)
+# Instalar dependências
+npm install
+
+# Iniciar aplicativo
+npx expo start
+
+📌 Backend (PHP + MySQL)
+
+Suba o servidor local (XAMPP/WAMP ou servidor real)
+
+Crie o banco de dados MySQL
+
+Importe o arquivo .sql (se houver)
+
+Configure o arquivo de conexão do backend:
+
+$host = "localhost";
+$user = "root";
+$pass = "";
+$db   = "parkon";
+
+
+Coloque os arquivos PHP na pasta htdocs do XAMPP.
+
+📌 ESP32 / Arduino
+
+Instale a IDE Arduino
+
+Instale as bibliotecas necessárias (WiFi, HTTPClient, Servo etc.)
+
+Configure o WiFi e a URL do backend dentro do código
+
+Faça o upload para o ESP32
+
+🔥 Stack Técnica Completa
+Frontend
+
+React Native (Expo)
+
+TypeScript
+
+Fetch API (comunicação)
+
+Backend
+
+PHP
+
+MySQL
+
+API REST simples
+
+Hardware
+
+Arduino
+
+ESP32
+
+C++
+
+Sensores digitais
+
+Servo motor
+
+LEDs indicadores
+
+🖼️ Prints do Aplicativo
+
+(Adicione suas imagens aqui quando quiser)
+
+<p align="center">
+  <img src="assets/screen1.png" width="250" />
+  <img src="assets/screen2.png" width="250" />
+</p>
+
+🧪 Objetivo do Protótipo
+
+Este projeto demonstra:
+
+Como integrar hardware de baixo custo a um app real
+
+Funcionamento de um estacionamento inteligente
+
+Comunicação entre dispositivos IoT e aplicativos móveis
+
+Aplicações práticas de IoT + Mobile + Web + Banco de Dados
+
+📄 Licença
+
+Este projeto está sob a licença MIT.
+Você pode usá-lo livremente para estudos, melhorias ou inspirações.
