@@ -123,13 +123,8 @@ Servo motor
 
 LEDs indicadores
 
-🖼️ Prints do Aplicativo
-
-(Adicione suas imagens aqui quando quiser)
-
 <p align="center">
-  <img src="assets/screen1.png" width="250" />
-  <img src="assets/screen2.png" width="250" />
+  <img src="https://yellowgreen-zebra-984347.hostingersite.com/img/mockupParkOn.png" width="250" />
 </p>
 
 🧪 Objetivo do Protótipo
